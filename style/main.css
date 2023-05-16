@@ -1,0 +1,263 @@
+@import 'fonts.css';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    font-size: 20px;
+    --title: #FFFFFF;
+    --mini-slide: #777777;
+    --main: #939393;
+    --occasions-bg: #B3B3B3;
+    --comments: #473F3F;
+    --nav: #473F3F;
+    --ul: #696969;
+    --about: #5F5959;
+    --our: #A9A9A9;
+    --our-bg: #939393;
+    --plants: #9E9F9F;
+    --special: #A4ADB4;
+    --favorite-bg: #C4C4C4;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'ledger';
+}
+
+.header {
+    background: var(--title);
+}
+
+.section {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.header__nav-content {
+    flex-grow: 0;
+}
+
+.header__nav-list {
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav-item {
+    margin-right: 30px;
+    padding: 2px;
+}
+
+.header__nav-item:last-of-type {
+    margin-right: 0;
+}
+
+.header__nav-link {
+    color: var(--ul);
+    border-bottom: 1px solid transparent;
+    transition: 400ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+}
+
+.header__nav-link:hover {
+    color: var(--comments);
+    border-color: var(--comments);
+}
+
+.header__nav {
+    padding: 0;
+}
+
+
+/* *******Carousel********** */
+
+.slider-pic {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.button.active {
+    max-width: 190px;
+    width: 100%;
+    height: 3px;
+    background: #5F5959;
+}
+
+
+
+/* About Us ****************************************************************************/
+
+
+.abaut {
+    justify-content: space-between;
+}
+
+.abaut_items {
+    margin-top: 25px;
+    background: #939393;
+    opacity: 0.8;
+    max-width: 920px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 222;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+
+}
+
+.abaut_itemms {
+    margin-left: 200px;
+    color: #939393;
+    font-family: '';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 150%;
+}
+
+.abaut_items-link {
+
+    color: #939393;
+    ;
+}
+
+
+.abaut_items-link:hover {
+    color: #939393;
+    ;
+}
+
+
+
+.abaut_items-desc {
+    width: 354px;
+    color: #FFFFFF;
+    padding-top: 45px;
+
+}
+
+
+
+.about_pic {
+    background: #FFFFFF;
+    padding: 33px 26px;
+    margin-left: 550px;
+    position: relative;
+    z-index: 999;
+    border: 1px solid rgba(164, 173, 180, 0.8);
+
+}
+
+
+.about_item-pic {
+    display: block;
+    max-width: 80px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* footer******************************************* */
+
+
+
+.footer_item{
+    background: #939393;
+    display: flex;
+}
+
+.form_input{
+    padding-bottom: 22px;
+    padding-left: 200px;
+}
+
+
+.form{
+    margin-right: 700px;
+    padding-top: 70px;
+    padding-bottom: 22px;
+}
+
+
+.form_input-label{
+    color: #FFFFFF;
+}
+
+
+.ramka{
+    max-width: 200px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+  /*   margin-left: 700px; */
+    
+   
+   
+}
+
+.ramka_item{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 80px ;
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.ram{
+    position: relative;
+}
+
+
+
+
+
+
+
+/* border: 2px solid #FFFFFF; */
+
+
+
+
+
+
+
+/* Media ********************************************************************/
+
+@media(max-width:992px) {
+    .header__nav-list {
+        flex-direction: column;
+    }
+
+    .header__nav-item {
+        align-items: center;
+        margin-right: 0
+    }
+}
